@@ -9,7 +9,7 @@ function ciclofor(){
     result *= i;
   }
   console.log(result)
-  document.getElementById("for").innerHTML = result;
+  document.getElementById("for").innerHTML = '!n: ' + result;
 }
 function ciclowhile(){
   var numberElement = document.getElementById("n");
@@ -23,7 +23,7 @@ function ciclowhile(){
     i++;
   }
   console.log(result)
-  document.getElementById("while").innerHTML = result;
+  document.getElementById("while").innerHTML = 'Sum: ' + result;
 }
 
 function ciclodowhile(){
@@ -40,5 +40,5 @@ function ciclodowhile(){
   }while (i<=number);
   avg = result / number;
   console.log(avg)
-  document.getElementById("dowhile").innerHTML = avg;
+  document.getElementById("dowhile").innerHTML = 'Avg: ' + avg;
 }

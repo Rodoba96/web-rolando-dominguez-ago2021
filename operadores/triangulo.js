@@ -14,5 +14,5 @@ function calcularArea(){
   console.log(area);
   
   var areaElement = document.getElementById("resultado");
-  areaElement.innerHTML = 'Area = '+area;
+  areaElement.innerHTML = '<h3>' + 'Area =' + area + '</h3>';
 }

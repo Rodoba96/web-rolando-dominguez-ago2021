@@ -2,20 +2,20 @@ var mytext;
 var result;
 var number = 10;
 
-function crearp() {
-  var numberElement = document.getElementById("mytext");
+function creap() {
+  var textElement = document.getElementById("mytext");
   mytext = textElement.value;
   console.log(mytext);
   result = "";
   for (var i=0; i<number; i++){
-    result += '<p>' +mytext + '</p>';
+    result += '<p>' + '<b>' +mytext + '</b>' + '</p>';
   }
   console.log(result);
   document.getElementById("parrafos").innerHTML = result;
 }
 
-function crearlist() {
-  var numberElement = document.getElementById("mytext");
+function crealist() {
+  var textElement = document.getElementById("mytext");
   mytext = textElement.value;
   console.log(mytext);
   result = "<ol>";
@@ -27,16 +27,18 @@ function crearlist() {
   document.getElementById("listas").innerHTML = result;
 }
 
-function creartable() {
-  var numberElement = document.getElementById("mytext");
+function creatable(mynumber) {
+  var textElement = document.getElementById("mytext");
   mytext = textElement.value;
   console.log(mytext);
   result = "<table border=1>";
-  result = '<tr> <th> texto </th> </tr>';
+  result += "<tr> <th> id </th> <th> texto </th> </tr>";
+  
+  number = mynumber;
   for (var i=0; i<number; i++){
-    result += '<tr>' + '<td>' + mytext + '</td>' + '</tr>';
+    result += '<tr>' + '<td>' + i + '</td>' + '<td>' + mytext + '</td>' + '</tr>';
   }
-  result += '</table>';
+  result += "</table>";
   console.log(result);
   document.getElementById("tabla").innerHTML = result;
 }
